@@ -1,0 +1,590 @@
+/* Main styles for ADNUAccreditationPage */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Typography System */
+/* Headers */
+.h1-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 1.2;
+}
+
+.h2-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.h3-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.h4-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* Subtitles */
+.subtitle1-regular {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.subtitle2-semibold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.subtitle2-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Body Text */
+.body1-regular {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.body2-semibold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.body3-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.body4-regular {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.body5-medium {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.body6-semibold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.body7-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* Captions */
+.caption1-regular {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.caption2-semibold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Header Styles */
+.header {
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 10px 0px #0000001A;
+  width: 100%;
+  height: 110px;
+  border-bottom: 1px solid #00396B;
+  position: relative;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 0;
+  padding: 0 48px;
+  height: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding-right: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.logo-a {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  color: #f9b208;
+}
+
+.logo-adnu {
+  color: #113f86;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+
+.logo-accred {
+  color: #2563a7;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+
+.divider {
+  color: #00396B;
+  margin: 0 24px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.app-title {
+  color: #00396B;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+/* Button base styles */
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00396B;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  padding: 7px 0;
+  position: relative;
+  background: transparent;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-button::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00396B;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-button:hover::after {
+  transform: scaleX(1);
+}
+
+/* Apply button active state */
+.nav-button.apply::after {
+  transform: scaleX(1);
+}
+
+.logout-button {
+  background-color: #f9b208;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #e0a107;
+}
+
+.cta-button {
+  background-color: #f9b208;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e0a107;
+}
+
+.start-button {
+  background-color: #f9b208;
+  color: #113f86;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #e0a107;
+}
+
+/* Down arrow in hero section */
+.down-arrow {
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icon-chevron-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 14px solid #f9b208;
+}
+
+/* Guide Section Styles */
+.guide-section {
+  padding: 64px 0px 32px 0px;
+  background-color: white;
+}
+
+.guide-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.guide-title {
+  background-color: #f9b208;
+  color: #113f86;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  display: inline-block;
+  min-width: 500px;
+}
+
+.guide-description {
+  color: #113f86;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Steps Section Styles */
+.steps-section {
+  background-color: #F8F8F8;
+  padding: 48px 20px;
+  width: 100%;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+  background-color: #F8F8F8;
+  margin: 0 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 60px 15px 60px;
+}
+
+@media (min-width: 768px) {
+  .steps-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .steps-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.step-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-title {
+  color: #113f86;
+  font-weight: bold;
+}
+
+.step-description {
+  color: #113f86;
+}
+
+/* CTA Section Styles */
+.cta-section {
+  padding: 48px 20px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.cta-title {
+  color: #113f86;
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: white;
+  padding: 32px 20px;
+  border-top: 1px solid #eee;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+  }
+}
+
+.footer-logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .footer-logo {
+    margin-bottom: 0;
+  }
+}
+
+.footer-adnu {
+  color: #113f86;
+}
+
+.footer-accred {
+  color: #2563a7;
+}
+
+.footer-subtitle {
+  font-size: 0.875rem;
+  color: #999;
+  font-weight: normal;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  color: #113f86;
+  transition: color 0.3s ease;
+  background: transparent;
+  padding: 4px 8px;
+}
+
+.footer-link:hover {
+  color: #2563a7;
+}
+
+/* Clean chevron style */
+.icon-chevron-right {
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+  margin-right: 8px;
+  display: inline-block;
+}
+
+/* Remove unnecessary icon styles */
+.icon-home::before,
+.icon-arrow-right::before,
+.icon-search::before,
+.icon-file-text::before,
+.icon-building::before,
+.icon-check-circle::before {
+  content: none;
+}
+
+/* Ensure the text span is also centered */
+.nav-button span {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  color: white;
+  padding: 128px 20px;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(rgba(17, 63, 134, 0.85), rgba(17, 63, 134, 0.85)), url('./../assets/images/adnu_4_pillars.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  color: #FFFFFF;
+}
+
+.highlight {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 48px;
+  color: #FFFFFF;
+}
+
+.hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 24px;
+  color: #FFFFFF;
+}
