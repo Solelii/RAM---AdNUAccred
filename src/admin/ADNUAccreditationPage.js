@@ -9,6 +9,8 @@ import HomeIcon from './../assets/icons/home_header.svg';
 import ApplyIcon from './../assets/icons/apply_header.svg';
 import SearchIcon from './../assets/icons/search_header.svg';
 import ApplicationIcon from './../assets/icons/application.svg';
+import BuildingIcon from './../assets/icons/building.svg';
+import CheckCircleIcon from './../assets/icons/check_circle.svg';
 
 // Main App Component
 const ADNUAccreditationPage = () => {
@@ -19,6 +21,15 @@ const ADNUAccreditationPage = () => {
   const handleButtonClick = (buttonName) => {
     console.log(`${buttonName} button clicked`);
     // In a real app, this could show modals, change states, etc.
+  };
+
+  // Handler for down arrow click
+  const handleDownArrowClick = (e) => {
+    e.preventDefault();
+    const guideSection = document.querySelector('.guide-section');
+    if (guideSection) {
+      guideSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -106,26 +117,29 @@ const ADNUAccreditationPage = () => {
         </div>
         
         {/* Down Arrow */}
-        <div className="down-arrow">
-          {/* TODO: Replace with actual Chevron Down icon component */}
-          {/* Example: <FaChevronDown className="icon" /> */}
-          <i className="icon icon-chevron-down"></i>
-        </div>
+        <a 
+          href="#guide"
+          className="down-arrow"
+          onClick={handleDownArrowClick}
+        >
+          <i className="icon-chevron-down"></i>
+        </a>
       </section>
 
+      {/* Guide Title */}
+      <div className="guide-title">
+        STEP-BY-STEP GUIDE
+      </div>
+
+      {/* Guide Description */}
+      <p className="guide-description">
+        Follow These Simple Steps To Complete Your Dorm Accreditation And Unlock More 
+        Opportunities For Growth And Trust.
+      </p>
+
       {/* Step-by-Step Guide Section */}
-      <section className="guide-section">
+      <section id="guide" className="guide-section">
         <div className="container">
-          <div className="guide-header">
-            <div className="guide-title">
-              STEP-BY-STEP GUIDE
-            </div>
-            <p className="guide-description">
-              Follow These Simple Steps To Complete Your Dorm Accreditation And Unlock More 
-              Opportunities For Growth And Trust.
-            </p>
-          </div>
-          
           {/* Steps */}
           <div className="steps-container">
             {/* Step 1 */}
@@ -142,9 +156,7 @@ const ADNUAccreditationPage = () => {
             {/* Step 2 */}
             <div className="step-item">
               <div className="step-icon">
-                {/* TODO: Replace with actual Building icon component */}
-                {/* Example: <FaBuilding className="icon" /> */}
-                <i className="icon icon-building"></i>
+                <img src={BuildingIcon} alt="Building" className="step-icon" />
               </div>
               <div className="step-content">
                 <h3 className="step-title">STEP 2:</h3>
@@ -166,7 +178,7 @@ const ADNUAccreditationPage = () => {
             {/* Step 4 */}
             <div className="step-item">
               <div className="step-icon">
-                <i className="icon icon-check-circle"></i>
+                <img src={CheckCircleIcon} alt="Check Circle" className="step-icon" />
               </div>
               <div className="step-content">
                 <h3 className="step-title">STEP 4:</h3>
@@ -180,7 +192,6 @@ const ADNUAccreditationPage = () => {
       {/* CTA Section */}
       <section className="cta-section">
         <div className="container">
-          <h2 className="cta-title">Ready to Begin?</h2>
           <button 
             className="start-button"
             onClick={() => handleButtonClick("Start Application")}

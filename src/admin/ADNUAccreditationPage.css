@@ -296,147 +296,140 @@ button {
   color: #fff;
   padding: 8px 16px;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .logout-button:hover {
-  background-color: #e0a107;
+  background-color: #00396B;
+  color: #FFFFFF;
 }
 
 .cta-button {
   background-color: #f9b208;
   color: white;
-  padding: 10px 24px;
+  padding: 16px 32px;
   border-radius: 8px;
   font-weight: 500;
-  transition: background-color 0.3s ease;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #e0a107;
+  background-color: #00396B;
+  color: white;
 }
 
 .start-button {
   background-color: #f9b208;
   color: #113f86;
-  padding: 12px 32px;
-  border-radius: 8px;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
+  padding: 16px 32px;
+  border-radius: 32px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
 }
 
 .start-button:hover {
-  background-color: #e0a107;
+  background-color: #00396B;
+  color: white;
 }
 
-/* Down arrow in hero section */
+/* Down arrow styles */
 .down-arrow {
   position: absolute;
-  bottom: -24px;
+  bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: white;
-  width: 48px;
-  height: 48px;
+  width: 80px;
+  height: 80px;
+  background-color: #FFFFFF;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.down-arrow:hover {
+  background-color: #f9b208;
+  transform: translateX(-50%) translateY(5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .icon-chevron-down {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 14px solid #f9b208;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+  display: inline-block;
+  margin-top: -12px;
+  border-color: #f9b208;
+  transition: border-color 0.3s ease;
+}
+
+.down-arrow:hover .icon-chevron-down {
+  border-color: #FFFFFF;
 }
 
 /* Guide Section Styles */
 .guide-section {
-  padding: 64px 0px 32px 0px;
-  background-color: white;
-}
-
-.guide-header {
-  text-align: center;
-  margin-bottom: 48px;
-}
-
-.guide-title {
-  background-color: #f9b208;
-  color: #113f86;
-  font-size: 1.25rem;
-  font-weight: bold;
-  padding: 16px;
-  border-radius: 4px;
-  margin-bottom: 32px;
-  display: inline-block;
-  min-width: 500px;
-}
-
-.guide-description {
-  color: #113f86;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Steps Section Styles */
-.steps-section {
   background-color: #F8F8F8;
-  padding: 48px 20px;
-  width: 100%;
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Remove old guide header styles */
+.guide-header {
+  display: none;
+}
+
+/* Steps container adjustments */
 .steps-container {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 32px;
-  background-color: #F8F8F8;
-  margin: 0 0;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 60px 15px 60px;
-}
-
-@media (min-width: 768px) {
-  .steps-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .steps-container {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  padding: 32px 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .step-item {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 16px;
-  padding: 20px;
-  border-radius: 8px;
 }
 
 .step-icon {
   width: 80px;
   height: 80px;
-  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.step-content {
-  flex: 1;
+.step-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .step-title {
   color: #113f86;
   font-weight: bold;
+  font-size: 1.25rem;
 }
 
 .step-description {
   color: #113f86;
+  font-size: 1.1rem;
 }
 
 /* CTA Section Styles */
@@ -448,8 +441,9 @@ button {
 
 .cta-title {
   color: #113f86;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: 24px;
+  font-weight: 400;
 }
 
 /* Footer Styles */
@@ -458,6 +452,7 @@ button {
   padding: 32px 20px;
   border-top: 1px solid #eee;
   margin-top: auto;
+  display: block;
 }
 
 .footer-content {
@@ -465,7 +460,7 @@ button {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -503,8 +498,7 @@ button {
 .footer-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
+  gap: 24px;
 }
 
 .footer-link {
@@ -551,12 +545,45 @@ button {
 /* Hero Section Styles */
 .hero-section {
   color: white;
-  padding: 128px 20px;
+  height: calc(100vh - 400px);
   text-align: center;
   position: relative;
   background: linear-gradient(rgba(17, 63, 134, 0.85), rgba(17, 63, 134, 0.85)), url('./../assets/images/adnu_4_pillars.svg');
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 20px;
+  margin-bottom: 150px;
+}
+
+/* Guide Title and Description */
+.guide-title {
+  background-color: #f9b208;
+  color: #113f86;
+  font-size: 1.75rem;
+  font-weight: 600;
+  padding: 24px 48px;
+  border-radius: 8px;
+  display: block;
+  width: fit-content;
+  min-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 40px;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+.guide-description {
+  color: #113f86;
+  max-width: 800px;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0 20px;
+  margin: 0 auto 48px;
 }
 
 .hero-content {
@@ -587,4 +614,21 @@ button {
   font-size: 20px;
   margin-bottom: 24px;
   color: #FFFFFF;
+}
+
+/* Copyright text */
+.copyright {
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 24px;
+}
+
+/* Container adjustments */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
 }
