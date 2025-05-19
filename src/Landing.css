@@ -1,0 +1,502 @@
+.landing-applicant {
+  background-color: rgba(255, 255, 255, 1.0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.landing-applicant .overlap-wrapper {
+  background-color: rgba(255, 255, 255, 1.0);
+  overflow: hidden;
+  background: linear-gradient(
+    288deg,
+    rgba(0, 57, 107, 1) 0%,
+    rgba(0, 111, 209, 1) 100%
+  );
+  width: 100vw;
+  height: 100vh;
+}
+
+.landing-applicant .overlap {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  top: 0.2vh;
+}
+
+.landing-applicant .image {
+  position: absolute;
+  width: 79vw;
+  height: 85vh;
+  top: 3.50vh;
+  left: 21vw;
+  object-fit: cover;
+}
+
+.landing-applicant .readytobuild {
+  position: absolute;
+  width: 32vw;
+  top: 28vh;
+  left: 16vw;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 3.3vw;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landing-applicant .readytobuildtxt {
+  font-weight: 600;
+}
+
+.landing-applicant .span {
+  font-family: "Poppins-ExtraBoldItalic", Helvetica;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.landing-applicant .get-accredited {
+  position: absolute;
+  width: 13vw;
+  height: 5vh;
+  top: 49vh;
+  left: 16vw;
+  background-color: #FFD700;
+  border-radius: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  box-shadow: 0 0.4vh 0.6vh rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.landing-applicant .get-accredited:hover {
+  background-color: #00396b;
+  color: gold;
+}
+
+.landing-applicant .get-accredited:hover .get-accreditedtxt {
+  color: gold;
+}
+
+.landing-applicant .get-accreditedtxt {
+  position: absolute;
+  top: 1.2vh;
+  left: 3vw;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #00396b;
+  font-size: 1.05vw;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landing-applicant .navbar {
+  position: absolute;
+  width: 100vw;
+  height: 6.2vh;
+  top: 0;
+  left: 0;
+}
+
+.landing-applicant .frame {
+  display: inline-flex;
+  align-items: center;
+  gap: 1vw;
+  position: absolute;
+  top: 1vh;
+  left: 2.5vw;
+}
+
+.landing-applicant .Logo {
+  position: relative;
+  width: 4vw;
+  height: 4vw;
+  object-fit: cover;
+}
+
+.landing-applicant .AdnuAccred {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.landing-applicant .adNUaccred {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.1vh;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 1.25vw;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landing-applicant .Adnutxt {
+  font-weight: 700;
+}
+
+.landing-applicant .Accredtxt {
+  font-family: "Poppins-Regular", Helvetica;
+}
+
+.landing-applicant .navbartxt {
+  position: absolute;
+  width: 18.5vw;
+  height: 2.1vh;
+  top: 3vh;
+  left: 69.7vw;
+}
+
+.landing-applicant .line {
+  position: absolute;
+  width: 5.4vw;
+  height: 0.1vh;
+  top: 4.5vh;
+  left: 0;
+  background-color: white;
+}
+
+.landing-applicant .navbar-wrapper {
+  position: absolute;
+  width: 17.8vw;
+  height: 1.4vh;
+  top: 0;
+  left: 0.7vw;
+}
+
+.landing-applicant .navbarPos {
+  display: inline-flex;
+  align-items: center;
+  gap: 2.9vw;
+  position: relative;
+}
+
+.landing-applicant .HomeP {
+  position: relative;
+  width: 4.1vw;
+  height: 1.4vh;
+}
+
+.landing-applicant .home {
+  position: absolute;
+  width: 2vw;
+  height: 1.8vh;
+  top: 0vh;
+  left: -.3vw;
+}
+
+.landing-applicant .Hometxt {
+  position: absolute;
+  top: -0.1vh;
+  left: 1.3vw;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 0.9vw;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landing-applicant .ApplyP {
+  position: relative;
+  width: 4.1vw;
+  height: 1.4vh;
+}
+
+.landing-applicant .ApplyIcon {
+  position: absolute;
+  width: 0.8vw;
+  height: 0.8vh;
+  top: 0.3vh;
+  left: 0;
+}
+
+.landing-applicant .ApplyPlus {
+  position: absolute;
+  width: 1.8vw;
+  height: 1.42vh;
+  top: .13vh;
+  left: 0vw;
+}
+
+.landing-applicant .ApplyBox {
+  position: absolute;
+  width: 2vw;
+  height: 1.8vh;
+  top: 0vh;
+  left: 0vw;
+}
+
+.landing-applicant .Applytxt {
+  position: absolute;
+  top: -0.1vh;
+  left: 1.25vw;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 0.9vw;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landing-applicant .TrackP {
+  position: relative;
+  width: 4.1vw;
+  height: 1.4vh;
+}
+
+.landing-applicant .Track {
+  position: absolute;
+  width: 2vw;
+  height: 1.8vh;
+  top: 0vh;
+  left: -.2vw;
+}
+
+.landing-applicant .Tracktxt {
+  position: absolute;
+  top: -0.09vh;
+  left: 1.35vw;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 0.9vw;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landing-applicant .button {
+  all: unset;
+  box-sizing: border-box;
+  position: absolute;
+  width: 3.63vw;
+  height: 3.20vh;
+  top: 3.52vh;
+  left: 93.3vw;
+  background-color: #f4c42c;
+  border-radius: 0.42vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.73vw;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.landing-applicant .FooterWrap {
+  position: absolute;
+  width: 100vw;
+  height: 14.44vh;
+  top: 86vh;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0vw 0.37vh 1.85vh 0.93vh #0000001a;
+}
+
+.landing-applicant .FootertxtP {
+  position: absolute;
+  width: 93.23vw;
+  height: 6.11vh;
+  top: 3.33vh;
+  left: 3.13vw;
+}
+
+.landing-applicant .FooterP {
+  position: absolute;
+  width: 37.55vw;
+  height: 2.03vh;
+  top: 1.48vh;
+  left: 55.47vw;
+}
+
+.landing-applicant .discover {
+  position: absolute;
+  width: 4.17vw;
+  height: 1.85vh;
+  top: 0.18vh;
+  left: 0;
+}
+
+.landing-applicant .Footertxt {
+  position: absolute;
+  top: -0.09vh;
+  left: 0;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #00396b;
+  font-size: 0.83vw;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landing-applicant .aboutus {
+  position: absolute;
+  width: 4.58vw;
+  height: 1.85vh;
+  top: 0.18vh;
+  left: 6.72vw;
+}
+
+.landing-applicant .howitworks {
+  position: absolute;
+  width: 7.03vw;
+  height: 2.03vh;
+  top: 0;
+  left: 24.95vw;
+}
+
+.landing-applicant .partner {
+  position: absolute;
+  width: 8.59vw;
+  height: 1.85vh;
+  top: 0.09vh;
+  left: 13.8vw;
+}
+
+.landing-applicant .FAQ {
+  position: absolute;
+  width: 3.07vw;
+  height: 1.85vh;
+  top: 0.09vh;
+  left: 34.48vw;
+}
+
+.landing-applicant .AdnuAccredD {
+  position: absolute;
+  width: 10.94vw;
+  height: 6.11vh;
+  top: 0;
+  left: 0;
+}
+
+.landing-applicant .p {
+  position: absolute;
+  width: 10.94vw;
+  height: 4.63vh;
+  top: 0;
+  left: 0;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 400;
+  color: #00396b;
+  font-size: 1.67vw;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landing-applicant .Ramtxt {
+  position: absolute;
+  width: 7.76vw;
+  height: 2.22vh;
+  top: 3.89vh;
+  left: 1.41vw;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #00396b;
+  font-size: 0.83vw;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landing-applicant .copyrightRAMwrapper {
+  position: absolute;
+  width: 100vw;
+  height: 2.59vh;
+  top: 11.85vh;
+  left: 0;
+  background-color: #f0f0f0;
+}
+
+.landing-applicant .copyrightRAM {
+  position: absolute;
+  top: 0.37vh;
+  left: 43.33vw;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #00396b;
+  font-size: 0.63vw;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+.landing-applicant {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlap-wrapper {
+  flex: 1;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.get-accredited {
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbarPos a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #d9a91f;
+}
+
+.FooterWrap {
+  background-color: #ffffff;
+  color: #00396b;
+}
+
+.FooterP a {
+  transition: color 0.3s ease;
+}
+
+.FooterP a:hover,
+.FooterP a:focus {
+  color: #f4c42c;
+}
+
